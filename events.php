@@ -24,7 +24,7 @@
 	$db = $m->hack;
 	$collection = $db->tokens;
 	
-	$tokenQ = array('token' => $_COOKIE['token']);
+	$tokenQ = array('value' => $_COOKIE['token']);
 	$cursor = iterator_to_array($collection->find($tokenQ));
 	var_dump($cursor);
 	
