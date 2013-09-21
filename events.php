@@ -32,7 +32,7 @@
 	}
 	else {
 		$user = $cursor[0]['user']
-		var_dump($user);
+		echo $user;
 	}
 ?>
 
