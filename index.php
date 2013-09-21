@@ -62,7 +62,7 @@
 	$collection = $db->users;
 	$userQ = array('username' => $_POST["user"]);
 	$cursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'password' => true)));
-	if ($cursor[0]['password'] == $_POST["password"]*/1) {
+	if ($cursor[0]['password'] == $_POST["password"]) {
 		$collection = $db->tokens;
 		$token = uniqid();
 		setcookie('token', $token, 60*60*24);
