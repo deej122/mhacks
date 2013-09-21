@@ -62,12 +62,13 @@
 	$collection = $db->users;
 	$userQ = array('username' => $_POST["user"]);
 	$cursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'password' => true)));
-	if ($cursor[0]['password'] == $_POST["password"]) {
+	var_dump($cursor);
+	if ($cursor['0']['password'] == $_POST["password"]) {
 		$collection = $db->tokens;
 		$token = uniqid();
 		setcookie('token', $token, 60*60*24);
 		$collection->insert(array( "value" => $token, "user" => $_POST["user"]));
-		header( 'Location: events.php');
+		//header( 'Location: events.php');
 	}
 	else {
 		echo 'Password is incorrect. Try again <br/>
