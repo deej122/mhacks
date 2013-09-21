@@ -64,7 +64,7 @@
 	$cursor = $collection->find($userQ);
 	if ($cursor[0]['password'] == $_POST["password"]) {
 		$collection = $db->tokens;
-		var token = uniqid();
+		token = uniqid();
 		setcookie('token', $token, 60*60*24);
 		$collection->insert(array( "value" => $token));
 		header( 'Location: events.php');
