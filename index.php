@@ -23,7 +23,6 @@
   </p>
 
   <?php
-  print_r($_COOKIE);
   error_reporting(-1); ini_set('display_errors', '1');
   
   if (!isset($_POST["name"]) || !isset($_POST["cont"]) || !isset($_POST["pass"])) {
