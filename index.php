@@ -65,7 +65,7 @@
 	if (count($cursor) && $cursor[0]['password'] == $_POST["password"]) {
 		$collection = $db->tokens;
 		$token = uniqid();
-		setcookie('token', $token, time()+3600, '/', 'http://ec2-54-224-122-252.compute-1.amazonaws.com/');
+		setcookie('token', $token, time()+3600, '/', 'ec2-54-224-122-252.compute-1.amazonaws.com');
 		$collection->insert(array( "value" => $token, "user" => $_POST["user"]));
 		header( 'Location: events.php');
 	}
