@@ -19,7 +19,7 @@
 
 <body style="margin:0;min-width: 1100px;">
 
-<?
+<?php
 	$m = new MongoClient();
 	$db = $m->hack;
 	$collection = $db->tokens;
