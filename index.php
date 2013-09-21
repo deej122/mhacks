@@ -24,6 +24,8 @@
 
   <?php
   
+  error_reporting(-1); ini_set('display_errors', '1');
+  
   if !isset($_POST["name"]) {
   
   echo '<form class="loginForm" action="index.php" method="POST" >
