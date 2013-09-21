@@ -67,8 +67,8 @@
 		$collection = $db->tokens;
 		$token = uniqid();
 		setcookie('token', $token, 60*60*24);
-		$collection->insert(array( "value" => $token));
-		header( 'Location: events.php');
+		$collection->insert(array( "value" => $token, "user" => $_POST["user"]));
+		//header( 'Location: events.php');
 	}
 	else {
 		echo 'Password is incorrect. Try again <br/>
