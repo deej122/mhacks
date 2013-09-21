@@ -45,9 +45,6 @@
     Event List
   </p>
   <ul class="list">
-    <li class="eventItem">MHacks Hackathon</li>
-    <li class="eventItem">PennApps</li>
-    <li class="eventItem">hackRU</li>
 <?php
 	$collection = $db->events;
 	$cursor = $collection->find();
