@@ -19,7 +19,7 @@
 <body style="margin:0;min-width: 1100px;">
 
   <p id="head">
-    Site Name
+    Hack-it-Together
   </p>
 
   <?php

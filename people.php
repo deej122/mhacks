@@ -21,9 +21,24 @@
 
 <body style="margin:0;min-width: 1100px;">
 
-  <a href="" id="head">
-    Site Name
-  </a>
+<?php
+	$m = new MongoClient();
+	$db = $m->hack;
+	$collection = $db->tokens;
+	
+	$tokenQ = array('value' => $_COOKIE['token']);
+	$cursor = iterator_to_array($collection->find($tokenQ));
+	
+	if (!count($cursor)) {
+		header( 'Location: index.php');
+	}
+	else {
+		$user = $cursor[0]['user'];
+		echo $user;
+	}
+
+	echo '<a href="" id="head">' . $_GET['event'] . '</a>'
+?>
 
   
   <p id="listLabel">
