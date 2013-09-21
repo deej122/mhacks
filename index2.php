@@ -18,7 +18,8 @@ $document = array( "title" => "XKCD", "online" => true );
 $collection->insert($document);
 
 // find everything in the collection
-$cursor = $collection->find();
+$sweetQuery = array('Details.Taste' => 'Sweet');
+$cursor = $collection->find($user);
 
 // iterate through the results
 foreach ($cursor as $document) {
