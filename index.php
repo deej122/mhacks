@@ -1,28 +1,55 @@
-<?php
-error_reporting(-1); ini_set('display_errors', '1');
-// connect
-$m = new MongoClient();
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=title%></title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/homePage.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/modals.css">
+    <script src="scripts/modals.js"></script>  
 
-// select a database
-$db = $m->comedy;
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        overflow: auto;
+      }
 
-// select a collection (analogous to a relational database's table)
-$collection = $db->cartoons;
+    </style>
+  </head>
 
-// add a record
-$document = array( "title" => "Calvin and Hobbes", "author" => "Bill Watterson" );
-$collection->insert($document);
+<body style="margin:0;min-width: 1100px;">
 
-// add another record, with a different "shape"
-$document = array( "title" => "XKCD", "online" => true );
-$collection->insert($document);
+  <p id="head">
+    Site Name
+  </p>
 
-// find everything in the collection
-$cursor = $collection->find();
+  <?php
+  
+  if !isset($_POST["name"]) {
+  
+  echo '<form class="loginForm" action="index.php" method="POST" >
+    <p class="formLabel">Sign Up to find teammates</p>  
+    <input id="name" type="text" class="input" placeholder="Name"/>
+    <br><br>    
+    <input type="text" class="input" placeholder="Email/Cell Phone"/>
+    <br><br>
+    <input type="password" class="input" placeholder="Password"/>
+    <br><br>
+    <input type="submit" class="button" value="Sign Up"/>
+  </form>';   
 
-// iterate through the results
-foreach ($cursor as $document) {
-    echo $document["title"] . "\n";
-}
+  }
+  
+  echo '<form class="loginForm" action="index.php" method="POST" id="login">
+    <p class="formLabel">Login to find teammates</p>  
+    <input type="text" class="input" placeholder="Email/Cell Phone"/>
+    <br><br>
+    <input type="password" class="input" placeholder="Password"/>
+    <br><br>
+    <input type="submit" class="button" value="Login"/>
+  </form>';
 
-?>
+  ?>
+  
+</body>
+
+</html>
