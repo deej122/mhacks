@@ -46,7 +46,7 @@
 	echo 'Thanks! Now log in';
   }
   
-  if (!isset($_POST["user"]) && !isset($_POST["password"])) {
+  if (!isset($_POST["user"]) || !isset($_POST["password"])) {
 	echo '<form class="loginForm" action="index.php" method="POST" id="login">
 			<p class="formLabel">Login to find teammates</p>  
 			<input name="user" type="text" class="input" placeholder="Email/Cell Phone"/>
