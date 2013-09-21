@@ -26,7 +26,7 @@
   
   error_reporting(-1); ini_set('display_errors', '1');
   
-  if (!isset($_POST["name"])) {
+  if (!isset($_POST["name"]) || !isset($_POST["cont"]) || !isset($_POST["pass"])) {
 	echo '<form class="loginForm" action="index.php" method="POST" >
 			<p class="formLabel">Sign Up to find teammates</p>  
 			<input name="name" type="text" class="input" placeholder="Name"/>
@@ -62,7 +62,7 @@
 	$collection = $db->users;
 	$userQ = array('username' => $_POST["user"]);
 	$cursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'password' => true)));
-	if ($cursor[0]['password'] == $_POST["password"]) {
+	if (count($cursor) && $cursor[0]['password'] == $_POST["password"]) {
 		$collection = $db->tokens;
 		$token = uniqid();
 		setcookie('token', $token, 60*60*24);
