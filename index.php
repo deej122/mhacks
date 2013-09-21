@@ -54,7 +54,7 @@
 			<input name="password" type="password" class="input" placeholder="Password"/>
 			<br><br>
 			<input type="submit" class="button" value="Login"/>
-		</form>';$collection = $db->users;
+		</form>'
   }
   else {
 	$m = new MongoClient();
