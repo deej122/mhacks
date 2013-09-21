@@ -15,11 +15,22 @@
       }
 
     </style>
-
-
   </head>
 
 <body style="margin:0;min-width: 1100px;">
+
+<?
+	$m = new MongoClient();
+	$db = $m->hack;
+	$collection = $db->tokens;
+	
+	$tokenQ = array('username' => $_COOKIE['token']);
+	$cursor = iterator_to_array($collection->find($tokenQ, array('_id' => 0, 'user' => true)));
+	
+	if (!count($cursor)) {
+		header( 'Location: index.php');
+	}
+?>
 
   <a href="" id="head">
     Site Name
@@ -33,15 +44,13 @@
     <li class="eventItem">MHacks Hackathon</li>
     <li class="eventItem">PennApps</li>
     <li class="eventItem">hackRU</li>
-    <li class="eventItem">MHacks Hackathon</li>
-    <li class="eventItem">PennApps</li>
-    <li class="eventItem">hackRU</li>
-    <li class="eventItem">MHacks Hackathon</li>
-    <li class="eventItem">PennApps</li>
-    <li class="eventItem">hackRU</li>
-    <li class="eventItem">MHacks Hackathon</li>
-    <li class="eventItem">PennApps</li>
-    <li class="eventItem">hackRU</li>    
+<?php
+	$collection = $db->events;
+	$cursor = $collection->find();
+	foreach ($cursor as $events) {
+		echo '<li class="eventItem">' . $events["title"] . "</li>\n";
+	}
+?>
   </ul> 
   <br>
   <div id="buttonDiv">
