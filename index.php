@@ -61,8 +61,8 @@
 	$db = $m->hack;
 	$collection = $db->users;
 	$userQ = array('username' => $_POST["user"]);
-	$cursor = iterator_to_array($collection->find($userQ), array('_id' => 0));
-	var_dump(reset($cursor));
+	$cursor = $collection->find($userQ, array('_id' => 0));
+	var_dump($cursor);
 	if (/*(reset($cursor))['password'] == $_POST["password"]*/1) {
 		$collection = $db->tokens;
 		$token = uniqid();
