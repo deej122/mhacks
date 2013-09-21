@@ -31,7 +31,7 @@
 		header( 'Location: index.php');
 	}
 	else {
-		$user = $cursor[0]['user']
+		$user = $cursor[0]['user'];
 		echo $user;
 	}
 ?>
