@@ -40,7 +40,7 @@
 	$collection = $db->events;
 	$eventQ = array('_id' => $_GET['id']);
 	$cursor = iterator_to_array($collection->find($eventQ));
-	echo '<a href="" id="head">' . $cursor[0]['title'] . '</a>'
+	echo '<a href="" id="head">' . $cursor[0]['title'] . '</a>';
 ?>
 
   
