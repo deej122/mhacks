@@ -26,7 +26,7 @@
   
   error_reporting(-1); ini_set('display_errors', '1');
   
-  if !isset($_POST["neame"]) {
+  //if !isset($_POST["name"]) {
   
   echo '<form class="loginForm" action="index.php" method="POST" >
     <p class="formLabel">Sign Up to find teammates</p>  
@@ -39,10 +39,10 @@
     <input type="submit" class="button" value="Sign Up"/>
   </form>';   
 
-  }
-  else {
+  //}
+  //else {
 	echo 'Thanks! Now log in';
-  }
+  //}
   
   echo '<form class="loginForm" action="index.php" method="POST" id="login">
     <p class="formLabel">Login to find teammates</p>  
