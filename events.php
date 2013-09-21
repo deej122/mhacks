@@ -49,7 +49,7 @@
 	$collection = $db->events;
 	$cursor = $collection->find();
 	foreach ($cursor as $events) {
-		echo '<li class="eventItem"><a href=people.php?event=' . $events["_id"] . '>' . $events["title"] . "</a>s</li>\n";
+		echo '<li class="eventItem"><a href=people.php?event=' . $events["_id"] . '>' . $events["title"] . "</a></li>\n";
 	}
 ?>
   </ul> 

@@ -37,7 +37,10 @@
 		echo $user;
 	}
 
-	echo '<a href="" id="head">' . $_GET['event'] . '</a>'
+	$collection = $db->events;
+	$tokenQ = array('_id' => $_GET['event']);
+	$cursor = iterator_to_array($collection->find($tokenQ));
+	echo '<a href="" id="head">' . $cursor[0]['title'] . '</a>'
 ?>
 
   
