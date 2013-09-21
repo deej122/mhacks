@@ -26,6 +26,7 @@
 	
 	$tokenQ = array('username' => $_COOKIE['token']);
 	$cursor = iterator_to_array($collection->find($tokenQ, array('_id' => 0, 'user' => true)));
+	var_dump($cursor);
 	
 	if (!count($cursor)) {
 		header( 'Location: index.php');
