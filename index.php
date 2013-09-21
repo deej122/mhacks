@@ -23,7 +23,7 @@
   </p>
 
   <?php
-  
+  print_r($_COOKIE);
   error_reporting(-1); ini_set('display_errors', '1');
   
   if (!isset($_POST["name"]) || !isset($_POST["cont"]) || !isset($_POST["pass"])) {
@@ -65,7 +65,7 @@
 	if (count($cursor) && $cursor[0]['password'] == $_POST["password"]) {
 		$collection = $db->tokens;
 		$token = uniqid();
-		setcookie('token', $token, 60*60*24);
+		setcookie('token', $token, time()+3600);
 		$collection->insert(array( "value" => $token, "user" => $_POST["user"]));
 		header( 'Location: events.php');
 	}
