@@ -24,8 +24,8 @@
 	$db = $m->hack;
 	$collection = $db->tokens;
 	
-	$tokenQ = array('username' => $_COOKIE['token']);
-	$cursor = iterator_to_array($collection->find($tokenQ, array('_id' => 0, 'user' => true)));
+	$tokenQ = array('token' => $_COOKIE['token']);
+	$cursor = iterator_to_array($collection->find($tokenQ));
 	var_dump($cursor);
 	
 	if (!count($cursor)) {
