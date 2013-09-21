@@ -62,7 +62,7 @@
 	$collection = $db->users;
 	$userQ = array('username' => $_POST["user"]);
 	$cursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'password' => true)));
-	if ($cursor['0']['password'] == $_POST["password"]) {
+	if ($cursor[0]['password'] == $_POST["password"]) {
 		$collection = $db->tokens;
 		$token = uniqid();
 		setcookie('token', $token, 60*60*24);
@@ -73,7 +73,7 @@
 		echo 'Password is incorrect. Try again <br/>
 		<form class="loginForm" action="index.php" method="POST" id="login">
 			<p class="formLabel">Login to find teammates</p>  
-			<input name="User" type="text" class="input" placeholder="Email/Cell Phone"/>
+			<input name="user" type="text" class="input" placeholder="Email/Cell Phone"/>
 			<br><br>
 			<input name="password" type="password" class="input" placeholder="Password"/>
 			<br><br>
