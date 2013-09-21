@@ -30,11 +30,11 @@
   
   echo '<form class="loginForm" action="index.php" method="POST" >
     <p class="formLabel">Sign Up to find teammates</p>  
-    <input id="name" type="text" class="input" placeholder="Name"/>
+    <input name="name" type="text" class="input" placeholder="Name"/>
     <br><br>    
-    <input id="cont" type="text" class="input" placeholder="Email/Cell Phone"/>
+    <input name="cont" type="text" class="input" placeholder="Email/Cell Phone"/>
     <br><br>
-    <input id="pass" type="password" class="input" placeholder="Password"/>
+    <input name="pass" type="password" class="input" placeholder="Password"/>
     <br><br>
     <input type="submit" class="button" value="Sign Up"/>
   </form>';   
