@@ -50,8 +50,8 @@
   </p>
   <ul class="list">
   <?php
-	var_dump($cursor[$_GET['id']][$ids]);
-	foreach ($cursor[$_GET['id']][$ids] as $user) {
+	var_dump($cursor[$_GET['id']]['ids']);
+	foreach ($cursor[$_GET['id']]['ids'] as $user) {
 		echo '<a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">' .
 		$user .
 		'<br><i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
