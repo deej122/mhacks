@@ -36,9 +36,8 @@
 	}
 	
 	$collection = $db->events;
-	if (isset($_POST["title"]) && $_POST["title"]!="" && $_POST["cap"]!="") {
+	if (isset($_POST["title"]) && $_POST["title"]!="" && $_POST["cap"]!="" && !count(iterator_to_array($collection->find(array('title' => $_POST["title"]))))) {
 		$collection->insert(array( "title" => $_POST["title"], "desc" => $_POST["desc"], "cap" => $_POST["cap"]));
-		unset($_POST["title"]);
 	}
 ?>
 
