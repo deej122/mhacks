@@ -10,7 +10,8 @@ html{
 }
 
 #head{
-	font-size: 70px;
+	font-size: 100px;
+	font-weight: 200;
 	color: rgba(255, 153, 18, 1);
 	margin: auto;
 	margin-top: 50px;
