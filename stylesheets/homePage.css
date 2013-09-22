@@ -40,8 +40,8 @@ html{
 
 .button{
 	border-radius: 3px;
-    padding: 5px;
-    font-size: 55px;
+    padding: 0.1em 0.3em;
+    font-size: 35px;
 	font-family: inherit;
 	font-weight: 200;
     color: #FFFFFF;
