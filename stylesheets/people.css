@@ -9,7 +9,7 @@ html{
 	vertical-align: middle;
 	background: #ddd;
 	border-radius: 5px;
-}
+	padding: 5px;
 }
 .skills {
 	display: block;
