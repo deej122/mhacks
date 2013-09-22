@@ -130,7 +130,7 @@
           <i><span style="font-size:30px; float:left;">Languages:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
-          <li >C++</li>
+          <li class="skill" >C++</li>
           <li class="skill" >HTML</li>
           <li class="skill" >JS</li>
           <li class="skill" >CSS</li>
@@ -139,7 +139,7 @@
           <i><span style="font-size:30px; float:left;">Operating Systems:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none;">
-          <li >Windows</li>
+          <li class="skill" >Windows</li>
           <li class="skill" >Linux</li>
           <li class="skill" >OSX</li>
           <li class="skill" >CSS</li>
@@ -148,7 +148,7 @@
           <i><span style="font-size:30px; float:left;">Devices:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
-          <li >iPhone</li>
+          <li class="skill" >iPhone</li>
           <li class="skill" >Android</li>
           <li class="skill" >Windows Phone</li>
           <li class="skill" >CSS</li>
@@ -171,7 +171,7 @@
         </div>
         <div class="modal-body">
           <ul style="font-size:20px; list-style-type:none; ">
-          <li >DJ Jag</li>
+          <li class="skill" >DJ Jag</li>
           <li class="skill" style="float:left;">Steve Jobs</li>
           <li class="skill" >Bill Gates</li>
           <li class="skill" >Cool Kid</li>
