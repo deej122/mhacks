@@ -118,7 +118,14 @@
           </ul>                    
         </div>          
         <div class="modal-footer">
-          <input type="button" class="button" value="Create" /> 
+		<?php
+		if (!$inside) {
+			echo '<input type="button" class="button" value="Create" />';
+		}
+		else {
+			echo '<input type="button" class="button" value="Update" />';
+		}
+		?>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
