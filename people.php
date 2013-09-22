@@ -49,25 +49,15 @@
     People at this event
   </p>
   <ul class="list">
-    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
-    DJ Jagannathan
-    <br>
-    <i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
-    </li></a>
-    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
-    John Smith
-    <br>
-    <i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
-    </li></a>
-    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
-    Steve Jobs
-    <br>
-    <i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
-    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
-    Bill Gates
-    <br>
-    <i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
-    </li></a>
+  <?php
+	var_dump($cursor);
+	foreach ($cursor as $user) {
+		echo '<a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">' .
+		$user .
+		'<br><i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
+		</li></a>';
+	}
+  ?>
   </ul> 
   <br>
   <div id="buttonDiv">
