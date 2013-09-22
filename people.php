@@ -50,6 +50,7 @@
   </p>
   <ul class="list">
   <?php
+	var_dump($cursor[$_GET['id']][$ids]);
 	foreach ($cursor[$_GET['id']][$ids] as $user) {
 		echo '<a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">' .
 		$user .
