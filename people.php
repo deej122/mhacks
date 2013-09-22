@@ -64,6 +64,7 @@
 		echo $ucursor[0]['username'] . ' ' . $user . '\n';
 		if ($ucursor[0]['username'] == $user) {
 			$inside = true;
+			echo "Hiii";
 		}
 	}
   ?>
