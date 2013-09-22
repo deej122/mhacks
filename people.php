@@ -75,7 +75,7 @@
 			echo "Create a Profile";
 		}
 		else {
-			echo "Update your profile";
+			echo "Update profile";
 		}
 	?>
 	</a>
