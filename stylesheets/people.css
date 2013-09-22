@@ -3,7 +3,7 @@ html{
 }
 
 .skills li {
-	/*display: inline-block;*/
+	display: inline-block;
 	margin-left: 20px;
 	width: 100px;
 	vertical-align: middle;
