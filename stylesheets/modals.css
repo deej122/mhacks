@@ -74,7 +74,7 @@
 }
 
 .modal.fade {
-  top: -50%;
+  top: -75%;
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
      -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
        -o-transition: opacity 0.3s linear, top 0.3s ease-out;
