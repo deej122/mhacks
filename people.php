@@ -50,10 +50,11 @@
   </p>
   <ul class="list">
   <?php
-	var_dump($cursor[$_GET['id']]['ids']);
 	foreach ($cursor[$_GET['id']]['ids'] as $user) {
+		$userQ = array('_id' => new MongoId($_GET['id']));
+		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true)));
 		echo '<a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">' .
-		$user .
+		$ucursor[0]['name'] .
 		'<br><i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
 		</li></a>';
 	}
