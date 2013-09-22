@@ -14,12 +14,23 @@ html{
 }
 
 #head{
-	width: 100%;
+	width: 50%;
 	border-bottom: 1px groove rgba(0,0,0,.1);
 	margin-top: -50px;
 	padding-left: 20px;
 	font-size: 30px;
 	float: left;
+	color: rgba(255, 153, 18, 1);
+	text-decoration: none;
+}
+
+#headr{
+	width: 50%;
+	border-bottom: 1px groove rgba(0,0,0,.1);
+	margin-top: -50px;
+	padding-left: 20px;
+	font-size: 30px;
+	float: right;
 	color: rgba(255, 153, 18, 1);
 	text-decoration: none;
 }
