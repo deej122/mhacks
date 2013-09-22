@@ -55,7 +55,7 @@
 	foreach ($cursor[$_GET['id']]['ids'] as $userI) {
 		$userQ = array('_id' => new MongoId($userI));
 		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true, 'prog' => true, 'username' => true)));
-		echo '<a data-toggle="modal" onclick="var name= "' . $ucursor[0]['name'] . '" href="#userModal" id="modelink"><li class="eventItem">' .
+		echo '<a data-toggle="modal" onclick="var name= "' . $ucursor[0]['name'] . 'recompute() " href="#userModal" id="modelink"><li class="eventItem">' .
 		$ucursor[0]['name'] .
 		'<br><i><span id="hacker">Skills: </span><span id="skillsList">' .
 		$ucursor[0]['prog'] .
@@ -137,7 +137,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close" data-dismiss="modal" aria-hidden="true" style="cursor:pointer;">&times;</button>
-          <p class="modal-title"><?php echo $_GET['name'] ?></p>
+          <p class="modal-title">
+		  <script type="text/javascript">
+			function recompute() {
+				document.write(name);   
+			}
+		  </script>
+		</p>
         </div>
         <div class="modal-body">
           <i><span style="font-size:30px;">Languages:</span></i>
