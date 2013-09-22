@@ -87,7 +87,7 @@
           <i><span style="font-size:30px; float:left;">Languages:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
-          <li style="float:left;"><input type="checkbox"> C++</li>
+          <li ><input type="checkbox"> C++</li>
           <li class="skill" id="skill"><input type="checkbox">HTML</li>
           <li class="skill" id="skill"><input type="checkbox">JS</li>
           <li class="skill" id="skill"><input type="checkbox">CSS</li>
@@ -96,7 +96,7 @@
           <i><span style="font-size:30px; float:left;">Operating Systems:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none;">
-          <li style="float:left"><input type="checkbox">Windows</li>
+          <li ><input type="checkbox">Windows</li>
           <li class="skill" id="skill"><input type="checkbox">Linux</li>
           <li class="skill" id="skill"><input type="checkbox">OSX</li>
           <li class="skill" id="skill"><input type="checkbox">CSS</li>
@@ -105,7 +105,7 @@
           <i><span style="font-size:30px; float:left;">Devices:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
-          <li style="float:left"><input type="checkbox">iPhone</li>
+          <li ><input type="checkbox">iPhone</li>
           <li class="skill" id="skill"><input type="checkbox">Android</li>
           <li class="skill" id="skill"><input type="checkbox">Windows Phone</li>
           <li class="skill" id="skill"><input type="checkbox">CSS</li>
@@ -130,28 +130,28 @@
           <i><span style="font-size:30px; float:left;">Languages:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
-          <li style="float:left">C++</li>
-          <li class="skill" style="float:left;">HTML</li>
-          <li class="skill" style="float:left">JS</li>
-          <li class="skill" style="float:left">CSS</li>
+          <li >C++</li>
+          <li class="skill" >HTML</li>
+          <li class="skill" >JS</li>
+          <li class="skill" >CSS</li>
           </ul>
           <br><br>
           <i><span style="font-size:30px; float:left;">Operating Systems:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none;">
-          <li style="float:left">Windows</li>
-          <li class="skill" style="float:left">Linux</li>
-          <li class="skill" style="float:left">OSX</li>
-          <li class="skill" style="float:left">CSS</li>
+          <li >Windows</li>
+          <li class="skill" >Linux</li>
+          <li class="skill" >OSX</li>
+          <li class="skill" >CSS</li>
           </ul>
           <br><br>
           <i><span style="font-size:30px; float:left;">Devices:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
-          <li style="float:left">iPhone</li>
-          <li class="skill" style="float:left">Android</li>
-          <li class="skill" style="float:left">Windows Phone</li>
-          <li class="skill" style="float:left">CSS</li>
+          <li >iPhone</li>
+          <li class="skill" >Android</li>
+          <li class="skill" >Windows Phone</li>
+          <li class="skill" >CSS</li>
           </ul>                    
         </div>          
         <div class="modal-footer">
@@ -171,10 +171,10 @@
         </div>
         <div class="modal-body">
           <ul style="font-size:20px; list-style-type:none; ">
-          <li style="float:left">DJ Jag</li>
+          <li >DJ Jag</li>
           <li class="skill" style="float:left;">Steve Jobs</li>
-          <li class="skill" style="float:left">Bill Gates</li>
-          <li class="skill" style="float:left">Cool Kid</li>
+          <li class="skill" >Bill Gates</li>
+          <li class="skill" >Cool Kid</li>
           </ul>                   
         </div>          
         <div class="modal-footer">
