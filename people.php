@@ -51,20 +51,34 @@
   <ul class="list">
   <?php
 	$collection = $db->users;
-	foreach ($cursor[$_GET['id']]['ids'] as $user) {
-		$userQ = array('_id' => new MongoId($user));
-		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true, 'prog' => true)));
-		echo '<a data-toggle="modal" href="?name=' . $ucursor[0]['name'] . '#userModal" id="modelink"><li class="eventItem">' .
+	$inside = false;
+	foreach ($cursor[$_GET['id']]['ids'] as $userI) {
+		$userQ = array('_id' => new MongoId($userI));
+		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true, 'prog' => true, 'username' => true)));
+		echo '<a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">' .
 		$ucursor[0]['name'] .
 		'<br><i><span id="hacker">Skills: </span><span id="skillsList">' .
 		$ucursor[0]['prog'] .
 		'</span></i></li></a>';
+
+		if ($ucursor[0]['username'] == $user) {
+			$inside = true;
+		}
 	}
   ?>
   </ul> 
   <br>
   <div id="buttonDiv">
-    <a data-toggle="modal" href="#myModal" class="button" style="text-decoration:none;">Create a Profile</a>
+    <a data-toggle="modal" href="#myModal" class="button" style="text-decoration:none;">
+	<?php
+		if (!$inside) {
+			echo "Create a Profile";
+		}
+		else {
+			echo "Update your profile";
+		}
+	?>
+	</a>
     <a data-toggle="modal" href="#myTeam" class="button" style="text-decoration:none;">My Team</a>
   </div>
 
