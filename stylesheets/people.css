@@ -22,6 +22,7 @@ html{
 	float: left;
 	color: rgba(255, 153, 18, 1);
 	text-decoration: none;
+	border: 1px solid black;
 }
 
 #headr{
@@ -33,6 +34,7 @@ html{
 	float: right;
 	color: rgba(255, 153, 18, 1);
 	text-decoration: none;
+	border: 1px solid black;
 }
 
 #listLabel{
