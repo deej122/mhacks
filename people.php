@@ -40,7 +40,8 @@
 	$collection = $db->events;
 	$eventQ = array('_id' => new MongoId($_GET['id']));
 	$cursor = iterator_to_array($collection->find($eventQ));
-	echo '<a href="" id="head">' . $cursor[$_GET['id']]['title'] . '</a>';
+	$etitle = $cursor[$_GET['id']]['title'];
+	echo '<a href="" id="head">' . $etitle . '</a>';
 	echo '<a href="events.php" id="headr">Back to Events</a>';
 ?>
 
@@ -76,10 +77,18 @@
   <div id="buttonDiv">
     <a data-toggle="modal" href="#myModal" class="button" style="text-decoration:none;">
 	<?php
-		if (!$inside) {
+		echo "MARKOL" . $_POST['up'] . "HHHIHIHIHIIH";
+		if (!$inside && $_POST['up'] != "Update") {
 			echo "Create a Profile";
 		}
 		else {
+			if ($_POST['up'] == "Update") {
+				$collection = $db->events;
+				$collection->update(
+                    { array("name" => $etitle) },
+                    { array("push" => array ("cores" => array ( "$each" => array (90, 92, 85) ) ) ) }
+                );
+			}
 			echo "Update profile";
 		}
 	?>
@@ -125,7 +134,7 @@
         <div class="modal-footer">
 		<?php
 		if (!$inside) {
-			echo '<input type="button" class="button" value="Create" />';
+			echo '<input name="up" action="people.php" method="POST" type="button" class="button" value="Create" />';
 		}
 		else {
 			echo '<input type="button" class="button" value="Update" />';
@@ -179,7 +188,6 @@
 			if ($_GET['name'] != $uname) {
 				echo '<input type="button" class="button" value="Invite to Team" />';
 			}
-			echo $_GET['name'] . ":d b:" . $uname;
 		  ?>
         </div>
       </div><!-- /.modal-content -->
