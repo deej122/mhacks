@@ -71,7 +71,6 @@
   <div id="buttonDiv">
     <a data-toggle="modal" href="#myModal" class="button" style="text-decoration:none;">
 	<?php
-		echo "Halp!";
 		if (!$inside) {
 			echo "Create a Profile";
 		}
