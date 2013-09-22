@@ -38,6 +38,7 @@
 	$collection = $db->events;
 	if (isset($_POST["title"]) && $_POST["title"]!="" && $_POST["cap"]!="") {
 		$collection->insert(array( "title" => $_POST["title"], "desc" => $_POST["desc"], "cap" => $_POST["cap"]));
+		$_POST["title"] = "";
 	}
 ?>
 
@@ -77,7 +78,7 @@
             <br><br>
 			<input name="desc" type="text" class="input" placeholder="Description"/>
             <br><br>
-            <input name="cap" type="number" class="input" min="0" placeholder="Max Team Capacity"/>
+            <input name="cap" type="number" class="input" min="1" placeholder="Max Team Capacity"/>
             <br><br>
             <input type="submit" class="button" value="Create" style="float:left;margin-left:180px;"/>
           </form>    

@@ -43,6 +43,7 @@
 	$db = $m->hack;
 	$collection = $db->users;
 	$collection->insert(array( "username" => $_POST["cont"], "password" => $_POST["pass"]));
+	unset($_POST["name"]);
 	echo 'Thanks! Now log in';
   }
   
