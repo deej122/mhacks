@@ -5,11 +5,16 @@ html{
 .input{
 	font-size: 20px;
 	border: 1px solid black;
-	padding: 4px;
+	border-width: 0 0 1px;
+	padding: 4px 0.5em;
 	height: 30px;
 	width: 300px;
 	font-family: inherit;
 	font-weight: 200;
+	text-align: center;
+}
+.input:hover {
+	border-width: 1px;
 }
 
 #head{
