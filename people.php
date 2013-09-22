@@ -61,10 +61,8 @@
 		$ucursor[0]['prog'] .
 		'</span></i></li></a>';
 
-		echo $ucursor[0]['username'] . ' ' . $user . '\n';
 		if ($ucursor[0]['username'] == $user) {
 			$inside = true;
-			echo "Hiii";
 		}
 	}
   ?>
@@ -73,6 +71,7 @@
   <div id="buttonDiv">
     <a data-toggle="modal" href="#myModal" class="button" style="text-decoration:none;">
 	<?php
+		echo "Halp!";
 		if (!$inside) {
 			echo "Create a Profile";
 		}
