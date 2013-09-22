@@ -88,7 +88,7 @@
           <i><span style="font-size:30px;">Languages:</span></i>
           <br>
           <ul class="skills">
-          <li><input type="checkbox"> C++</li>
+          <li><input type="checkbox">C++</li>
           <li><input type="checkbox">HTML</li>
           <li><input type="checkbox">JS</li>
           <li><input type="checkbox">CSS</li>
@@ -100,7 +100,6 @@
           <li><input type="checkbox">Windows</li>
           <li><input type="checkbox">Linux</li>
           <li><input type="checkbox">OSX</li>
-          <li><input type="checkbox">CSS</li>
           </ul>
           <br><br>
           <i><span style="font-size:30px;">Devices:</span></i>
@@ -108,8 +107,7 @@
           <ul class="skills">
           <li><input type="checkbox">iPhone</li>
           <li><input type="checkbox">Android</li>
-          <li><input type="checkbox">Windows Phone</li>
-          <li><input type="checkbox">CSS</li>
+          <li><input type="checkbox">Windows</li>
           </ul>                    
         </div>          
         <div class="modal-footer">
