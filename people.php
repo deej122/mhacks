@@ -54,8 +54,7 @@
 	foreach ($cursor[$_GET['id']]['ids'] as $user) {
 		$userQ = array('_id' => new MongoId($user));
 		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true, 'prog' => true)));
-		var_dump($ucursor[0]);
-		echo '<a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">' .
+		echo '<a data-toggle="modal" href="&name=' . $ucursor[0]['name'] . '#userModal" id="modelink"><li class="eventItem">' .
 		$ucursor[0]['name'] .
 		'<br><i><span id="hacker">Skills: </span><span id="skillsList">' .
 		$ucursor[0]['prog'] .
@@ -117,7 +116,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close" data-dismiss="modal" aria-hidden="true" style="cursor:pointer;">&times;</button>
-          <p class="modal-title">Other Profile</p>
+          <p class="modal-title"><?php echo $_GET['name'] ?></p>
         </div>
         <div class="modal-body">
           <i><span style="font-size:30px;">Languages:</span></i>
@@ -135,7 +134,6 @@
           <li>Windows</li>
           <li>Linux</li>
           <li>OSX</li>
-          <li>CSS</li>
           </ul>
           <br><br>
           <i><span style="font-size:30px;">Devices:</span></i>
@@ -143,8 +141,7 @@
           <ul class="skills">
           <li>iPhone</li>
           <li>Android</li>
-          <li>Windows Phone</li>
-          <li>CSS</li>
+          <li>Windows</li>
           </ul>                    
         </div>          
         <div class="modal-footer">
