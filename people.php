@@ -179,6 +179,7 @@
 			if ($_GET['name'] != $uname) {
 				echo '<input type="button" class="button" value="Invite to Team" />';
 			}
+			echo $_GET['name'] . " " . $uname;
 		  ?>
         </div>
       </div><!-- /.modal-content -->
