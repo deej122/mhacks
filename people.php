@@ -85,7 +85,7 @@
           <p class="modal-title">Your Profile</p>
         </div>
         <div class="modal-body">
-          <i><span style="font-size:30px; float:left;">Languages:</span></i>
+          <i><span style="font-size:30px;">Languages:</span></i>
           <br>
           <ul class="skills">
           <li><input type="checkbox"> C++</li>
@@ -94,7 +94,7 @@
           <li><input type="checkbox">CSS</li>
           </ul>
           <br><br>
-          <i><span style="font-size:30px; float:left;">Operating Systems:</span></i>
+          <i><span style="font-size:30px;">Operating Systems:</span></i>
           <br>
           <ul class="skills">
           <li><input type="checkbox">Windows</li>
@@ -103,7 +103,7 @@
           <li><input type="checkbox">CSS</li>
           </ul>
           <br><br>
-          <i><span style="font-size:30px; float:left;">Devices:</span></i>
+          <i><span style="font-size:30px;">Devices:</span></i>
           <br>
           <ul class="skills">
           <li><input type="checkbox">iPhone</li>
