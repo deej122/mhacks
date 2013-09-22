@@ -28,7 +28,6 @@
   
   if (!isset($_POST["name"]) || !isset($_POST["cont"]) || !isset($_POST["pass"])) {
 	echo '<form class="loginForm" action="index.php" method="POST" >
-			<p class="formLabel">Sign Up</p>  
 			<input name="name" type="text" class="input" placeholder="Name"/>
 			<br><br>    
 			<input name="cont" type="text" class="input" placeholder="Email/Cell Phone"/>
@@ -48,8 +47,7 @@
   }
   
   if (!isset($_POST["user"]) || !isset($_POST["password"])) {
-	echo '<form class="loginForm" action="index.php" method="POST" id="login">
-			<p class="formLabel">Login to Find Teammates</p>  
+	echo '<form class="loginForm" action="index.php" method="POST" id="login"> 
 			<input name="user" type="text" class="input" placeholder="Email/Cell Phone"/>
 			<br><br>
 			<input name="password" type="password" class="input" placeholder="Password"/>
@@ -72,8 +70,7 @@
 	}
 	else {
 		echo 'Password is incorrect. Try again <br/>
-		<form class="loginForm" action="index.php" method="POST" id="login">
-			<p class="formLabel">Login to find teammates</p>  
+		<form class="loginForm" action="index.php" method="POST" id="login">  
 			<input name="user" type="text" class="input" placeholder="Email/Cell Phone"/>
 			<br><br>
 			<input name="password" type="password" class="input" placeholder="Password"/>
