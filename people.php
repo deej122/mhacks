@@ -82,34 +82,34 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close" data-dismiss="modal" aria-hidden="true" style="cursor:pointer;">&times;</button>
-          <p class="modal-title">Teammate's Name</p>
+          <p class="modal-title">Your Profile</p>
         </div>
         <div class="modal-body">
           <i><span style="font-size:30px; float:left;">Languages:</span></i>
           <br>
-          <ul style="font-size:20px; list-style-type:none; ">
-          <li ><input type="checkbox"> C++</li>
-          <liid="skill"><input type="checkbox">HTML</li>
-          <liid="skill"><input type="checkbox">JS</li>
-          <liid="skill"><input type="checkbox">CSS</li>
+          <ul class="skills">
+          <li><input type="checkbox"> C++</li>
+          <li><input type="checkbox">HTML</li>
+          <li><input type="checkbox">JS</li>
+          <li><input type="checkbox">CSS</li>
           </ul>
           <br><br>
           <i><span style="font-size:30px; float:left;">Operating Systems:</span></i>
           <br>
           <ul class="skills">
-          <li ><input type="checkbox">Windows</li>
-          <liid="skill"><input type="checkbox">Linux</li>
-          <liid="skill"><input type="checkbox">OSX</li>
-          <liid="skill"><input type="checkbox">CSS</li>
+          <li><input type="checkbox">Windows</li>
+          <li><input type="checkbox">Linux</li>
+          <li><input type="checkbox">OSX</li>
+          <li><input type="checkbox">CSS</li>
           </ul>
           <br><br>
           <i><span style="font-size:30px; float:left;">Devices:</span></i>
           <br>
           <ul class="skills">
-          <li ><input type="checkbox">iPhone</li>
-          <liid="skill"><input type="checkbox">Android</li>
-          <liid="skill"><input type="checkbox">Windows Phone</li>
-          <liid="skill"><input type="checkbox">CSS</li>
+          <li><input type="checkbox">iPhone</li>
+          <li><input type="checkbox">Android</li>
+          <li><input type="checkbox">Windows Phone</li>
+          <li><input type="checkbox">CSS</li>
           </ul>                    
         </div>          
         <div class="modal-footer">
@@ -125,7 +125,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close" data-dismiss="modal" aria-hidden="true" style="cursor:pointer;">&times;</button>
-          <p class="modal-title">Your Profile</p>
+          <p class="modal-title">Other Profile</p>
         </div>
         <div class="modal-body">
           <i><span style="font-size:30px;">Languages:</span></i>
