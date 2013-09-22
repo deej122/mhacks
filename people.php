@@ -34,12 +34,12 @@
 	}
 	else {
 		$user = $cursor[0]['user'];
-		echo $user;
 	}
 
 	$collection = $db->events;
 	$eventQ = array('_id' => $_GET['id']);
 	$cursor = iterator_to_array($collection->find($eventQ));
+	var_dump($cursor);
 	echo '<a href="" id="head">' . $cursor[0]['title'] . '</a>';
 ?>
 
