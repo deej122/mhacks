@@ -70,6 +70,8 @@
           <form class="createForm" action="POST">
             <input type="text" class="input" placeholder="Event Name"/>
             <br><br>    
+			<input type="text" class="input" placeholder="Description"/>
+            <br><br>   
             <input type="number" class="input" min="0" placeholder="Max Team Capacity"/>
             <br><br>
             <input type="submit" class="button" value="Create" style="float:left;margin-left:180px;"/>

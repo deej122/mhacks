@@ -4,6 +4,9 @@ html{
 
 .skill{
 	margin-left: 20px;
+	float:left;
+	width:150px;
+	text-align:left;
 }
 
 .input{
@@ -59,6 +62,12 @@ html{
 #modelink{
 	text-decoration:none;
 	color:#000;
+}
+
+#teammate{
+	float:left;
+	width:150px;
+	text-align:left;
 }
 
 .list{
