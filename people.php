@@ -48,44 +48,27 @@
     People at this event
   </p>
   <ul class="list">
-    <a data-toggle="modal" href="#userModal" style="text-decoration:none;color:#000;"><li class="eventItem">
+    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
     DJ Jagannathan
     <br>
-    <i><span style="font-size:12px;color:rgba(0,0,0,.3);">Skills: </span><span id="skillsList" style="font-weight:italic;color:rgba(0,0,0,.3);font-size:12px;">C++, HTML, JS, CSS</span></i>
+    <i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
     </li></a>
-    <a data-toggle="modal" href="#userModal" style="text-decoration:none;color:#000;"><li class="eventItem">
+    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
     John Smith
     <br>
-    <i><span style="font-size:12px;color:rgba(0,0,0,.3);">Skills: </span><span id="skillsList" style="font-weight:italic;color:rgba(0,0,0,.3);font-size:12px;">C++, HTML, JS, CSS</span></i>
+    <i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
     </li></a>
-    <a data-toggle="modal" href="#userModal" style="text-decoration:none;color:#000;"><li class="eventItem">
+    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
     Steve Jobs
     <br>
-    <i><span style="font-size:12px;color:rgba(0,0,0,.3);">Skills: </span><span id="skillsList" style="font-weight:italic;color:rgba(0,0,0,.3);font-size:12px;">C++, HTML, JS, CSS</span></i>
-    <a data-toggle="modal" href="#userModal" style="text-decoration:none;color:#000;"><li class="eventItem">
+    <i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
+    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
     Bill Gates
     <br>
-    <i><span style="font-size:12px;color:rgba(0,0,0,.3);">Skills: </span><span id="skillsList" style="font-weight:italic;color:rgba(0,0,0,.3);font-size:12px;">C++, HTML, JS, CSS</span></i>
+    <i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
     </li></a>
-    <a data-toggle="modal" href="#userModal" style="text-decoration:none;color:#000;"><li class="eventItem">
+    <a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">
     DJ Jagannathan
-    <br>
-    <i><span style="font-size:12px;color:rgba(0,0,0,.3);">Skills: </span><span id="skillsList" style="font-weight:italic;color:rgba(0,0,0,.3);font-size:12px;">C++, HTML, JS, CSS</span></i>
-    </li></a>
-    <a data-toggle="modal" href="#userModal" style="text-decoration:none;color:#000;"><li class="eventItem">
-    John Smith
-    <br>
-    <i><span style="font-size:12px;color:rgba(0,0,0,.3);">Skills: </span><span id="skillsList" style="font-weight:italic;color:rgba(0,0,0,.3);font-size:12px;">C++, HTML, JS, CSS</span></i>
-    </li></a>
-    <a data-toggle="modal" href="#userModal" style="text-decoration:none;color:#000;"><li class="eventItem">
-    Steve Jobs
-    <br>
-    <i><span style="font-size:12px;color:rgba(0,0,0,.3);">Skills: </span><span id="skillsList" style="font-weight:italic;color:rgba(0,0,0,.3);font-size:12px;">C++, HTML, JS, CSS</span></i>
-    <a data-toggle="modal" href="#userModal" style="text-decoration:none;color:#000;"><li class="eventItem">
-    Bill Gates
-    <br>
-    <i><span style="font-size:12px;color:rgba(0,0,0,.3);">Skills: </span><span id="skillsList" style="font-weight:italic;color:rgba(0,0,0,.3);font-size:12px;">C++, HTML, JS, CSS</span></i>
-    </li></a>
   </ul> 
   <br>
   <div id="buttonDiv">
