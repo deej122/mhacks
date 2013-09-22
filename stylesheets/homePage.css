@@ -5,7 +5,7 @@ html{
 .input{
 	font-size: 20px;
 	border: 1px solid black;
-	border-width: 0 0 1px;
+	border-color: transparent transparent black;
 	padding: 4px 0.5em;
 	height: 30px;
 	width: 300px;
@@ -14,7 +14,7 @@ html{
 	text-align: center;
 }
 .input:hover {
-	border-width: 1px;
+	border-color: black;
 }
 
 #head{
@@ -45,7 +45,7 @@ html{
 
 .button{
 	border-radius: 3px;
-    padding: 0.1em 0.3em;
+    padding: 0.2em 0.5em;
     font-size: 35px;
 	font-family: inherit;
 	font-weight: 200;
