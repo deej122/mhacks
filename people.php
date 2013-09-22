@@ -28,14 +28,13 @@
 	$collection = $db->tokens;
 	
 	$tokenQ = array('value' => $_COOKIE['token']);
-	$cursor = iterator_to_array($collection->find($tokenQ, array('_id' => 0, 'user' => true, 'name' => true)));
+	$cursor = iterator_to_array($collection->find($tokenQ, array('_id' => 0, 'user' => true)));
 	
 	if (!count($cursor)) {
 		header( 'Location: index.php');
 	}
 	else {
 		$user = $cursor[0]['user'];
-		$uname = $cursor[0]['name'];
 	}
 
 	$collection = $db->events;
@@ -68,6 +67,7 @@
 
 		if ($ucursor[0]['username'] == $user) {
 			$inside = true;
+			$uname = $ucursor[0]['name'];
 		}
 	}
   ?>
