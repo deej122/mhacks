@@ -28,7 +28,7 @@
   
   if (!isset($_POST["name"]) || !isset($_POST["cont"]) || !isset($_POST["pass"])) {
 	echo '<form class="loginForm" action="index.php" method="POST" >
-			<p class="formLabel">Sign Up to find teammates</p>  
+			<p class="formLabel">Sign Up</p>  
 			<input name="name" type="text" class="input" placeholder="Name"/>
 			<br><br>    
 			<input name="cont" type="text" class="input" placeholder="Email/Cell Phone"/>
@@ -44,7 +44,7 @@
 	$collection = $db->users;
 	$collection->insert(array( "username" => $_POST["cont"], "password" => $_POST["pass"]));
 	unset($_POST["name"]);
-	echo 'Thanks! Now log in';
+	echo '<p class="formLabel">Thanks! Now log in</p>';
   }
   
   if (!isset($_POST["user"]) || !isset($_POST["password"])) {
