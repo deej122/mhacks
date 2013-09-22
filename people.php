@@ -50,6 +50,7 @@
   </p>
   <ul class="list">
   <?php
+	$collection = $db->users;
 	foreach ($cursor[$_GET['id']]['ids'] as $user) {
 		var_dump($user);
 		$userQ = array('_id' => new MongoId($user));
