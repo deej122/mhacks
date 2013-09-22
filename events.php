@@ -38,7 +38,7 @@
 	$collection = $db->events;
 	if (isset($_POST["title"]) && $_POST["title"]!="" && $_POST["cap"]!="") {
 		$collection->insert(array( "title" => $_POST["title"], "desc" => $_POST["desc"], "cap" => $_POST["cap"]));
-		$_POST["title"] = "";
+		unset($_POST["title"]);
 	}
 ?>
 
