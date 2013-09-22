@@ -140,7 +140,7 @@
           <p class="modal-title">
 		  <script type="text/javascript">
 			function recompute() {
-				document.write(name);   
+				document.write("Debug" + name);   
 			}
 		  </script>
 		</p>
