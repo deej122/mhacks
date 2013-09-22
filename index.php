@@ -41,7 +41,7 @@
 	$m = new MongoClient();
 	$db = $m->hack;
 	$collection = $db->users;
-	$collection->insert(array( "username" => $_POST["cont"], "password" => $_POST["pass"]));
+	$collection->insert(array( "username" => $_POST["cont"], "password" => $_POST["pass"], "name" => $_POST["name"]));
 	unset($_POST["name"]);
 	echo '<p class="formLabel">Thanks! Now log in</p>';
   }
