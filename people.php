@@ -124,7 +124,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close" data-dismiss="modal" aria-hidden="true" style="cursor:pointer;">&times;</button>
-          <p class="modal-title">Teammate's Name</p>
+          <p class="modal-title">Your Profile</p>
         </div>
         <div class="modal-body">
           <i><span style="font-size:30px; float:left;">Languages:</span></i>
