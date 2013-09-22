@@ -57,7 +57,7 @@
 		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true, 'prog' => true, 'username' => true)));
 		echo '<a data-toggle="modal"';
 		if (!isset($_GET['name']) || $_GET['name'] != $ucursor[0]['name']) {
-			echo 'onclick=\'window.location = "people.php?id=' . $_GET['id'] . '&name=' . $ucursor[0]['name'] . '"\';'
+			echo 'onclick=\'window.location = "people.php?id=' . $_GET['id'] . '&name=' . $ucursor[0]['name'] . '"\';';
 		}
 		echo 'href=#userModal id="modelink"><li class="eventItem">' .
 		$ucursor[0]['name'] .
