@@ -35,6 +35,7 @@
 	}
 	else {
 		$user = $cursor[0]['user'];
+		$uname = $cursor[0]['name'];
 	}
 
 	$collection = $db->events;
@@ -174,7 +175,11 @@
           </ul>                    
         </div>          
         <div class="modal-footer">
-          <input type="button" class="button" value="Invite to Team" /> 
+		  <?php
+			if ($_GET['name'] != $uname) {
+				echo '<input type="button" class="button" value="Invite to Team" />';
+			}
+		  ?>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
