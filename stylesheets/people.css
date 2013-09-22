@@ -11,6 +11,8 @@ html{
 	display: block;
 	margin: 0;
 	text-align: left;
+	list-style: none;
+	font-size: 20px;
 }
 
 .input{

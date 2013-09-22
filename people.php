@@ -104,7 +104,7 @@
           <br><br>
           <i><span style="font-size:30px; float:left;">Devices:</span></i>
           <br>
-          <ul style="font-size:20px; list-style-type:none; ">
+          <ul class="skills">
           <li ><input type="checkbox">iPhone</li>
           <liid="skill"><input type="checkbox">Android</li>
           <liid="skill"><input type="checkbox">Windows Phone</li>
@@ -147,7 +147,7 @@
           <br><br>
           <i><span style="font-size:30px;">Devices:</span></i>
           <br>
-          <ul style="font-size:20px; list-style-type:none; ">
+          <ul class="skills">
           <li>iPhone</li>
           <li>Android</li>
           <li>Windows Phone</li>
