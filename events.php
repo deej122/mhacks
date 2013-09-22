@@ -34,6 +34,11 @@
 	else {
 		$user = $cursor[0]['user'];
 	}
+	
+	$collection = $db->events;
+	if (isset($_POST["title"]) && isset($_POST["cap"])) {
+		$collection->insert(array( "title" => $_POST["title"], "desc" => $_POST["desc"], "cap" => $_POST["cap"]));
+	}
 ?>
 
   <a href="" id="head">
@@ -46,7 +51,6 @@
   </p>
   <ul class="list">
 <?php
-	$collection = $db->events;
 	$cursor = $collection->find();
 	foreach ($cursor as $events) {
 		echo '<li class="eventItem"><a href=people.php?id=' . $events["_id"] . '>' . $events["title"] . "</a></li>\n";
@@ -68,12 +72,12 @@
           <p class="modal-title">Create a New Event</p>
         </div>
         <div class="modal-body">
-          <form class="createForm" action="POST">
-            <input type="text" class="input" placeholder="Event Name"/>
-            <br><br>    
-			<input type="text" class="input" placeholder="Description"/>
-            <br><br>   
-            <input type="number" class="input" min="0" placeholder="Max Team Capacity"/>
+          <form class="createForm" action="events.php" method="POST">
+            <input name="title" type="text" class="input" placeholder="Event Name"/>
+            <br><br>
+			<input name="desc" type="text" class="input" placeholder="Description"/>
+            <br><br>
+            <input name="cap" type="number" class="input" min="0" placeholder="Max Team Capacity"/>
             <br><br>
             <input type="submit" class="button" value="Create" style="float:left;margin-left:180px;"/>
           </form>    
