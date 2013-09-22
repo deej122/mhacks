@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%=title%></title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/people.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/modals.css">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>    

@@ -2,7 +2,8 @@
 <html>
   <head>
     <title><%=title%></title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/homePage.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/homePage.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/modals.css">
     <script src="scripts/modals.js"></script>  
 

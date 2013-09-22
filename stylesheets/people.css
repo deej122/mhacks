@@ -6,13 +6,19 @@ html{
 	display: inline-block;
 	margin-left: 20px;
 	width: 100px;
+	vertical-align: middle;
+	background: #ddd;
+	border-radius: 5px;
+}
 }
 .skills {
 	display: block;
 	margin: 0;
+	vertical-align: middle;
 	text-align: left;
 	list-style: none;
 	font-size: 20px;
+	padding-left: 0;
 }
 
 .input{
