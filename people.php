@@ -88,27 +88,27 @@
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
           <li ><input type="checkbox"> C++</li>
-          <li class="skill" id="skill"><input type="checkbox">HTML</li>
-          <li class="skill" id="skill"><input type="checkbox">JS</li>
-          <li class="skill" id="skill"><input type="checkbox">CSS</li>
+          <liid="skill"><input type="checkbox">HTML</li>
+          <liid="skill"><input type="checkbox">JS</li>
+          <liid="skill"><input type="checkbox">CSS</li>
           </ul>
           <br><br>
           <i><span style="font-size:30px; float:left;">Operating Systems:</span></i>
           <br>
-          <ul style="font-size:20px; list-style-type:none;">
+          <ul class="skills">
           <li ><input type="checkbox">Windows</li>
-          <li class="skill" id="skill"><input type="checkbox">Linux</li>
-          <li class="skill" id="skill"><input type="checkbox">OSX</li>
-          <li class="skill" id="skill"><input type="checkbox">CSS</li>
+          <liid="skill"><input type="checkbox">Linux</li>
+          <liid="skill"><input type="checkbox">OSX</li>
+          <liid="skill"><input type="checkbox">CSS</li>
           </ul>
           <br><br>
           <i><span style="font-size:30px; float:left;">Devices:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
           <li ><input type="checkbox">iPhone</li>
-          <li class="skill" id="skill"><input type="checkbox">Android</li>
-          <li class="skill" id="skill"><input type="checkbox">Windows Phone</li>
-          <li class="skill" id="skill"><input type="checkbox">CSS</li>
+          <liid="skill"><input type="checkbox">Android</li>
+          <liid="skill"><input type="checkbox">Windows Phone</li>
+          <liid="skill"><input type="checkbox">CSS</li>
           </ul>                    
         </div>          
         <div class="modal-footer">
@@ -127,31 +127,31 @@
           <p class="modal-title">Your Profile</p>
         </div>
         <div class="modal-body">
-          <i><span style="font-size:30px; float:left;">Languages:</span></i>
+          <i><span style="font-size:30px;">Languages:</span></i>
           <br>
-          <ul style="font-size:20px; list-style-type:none; ">
-          <li class="skill" >C++</li>
-          <li class="skill" >HTML</li>
-          <li class="skill" >JS</li>
-          <li class="skill" >CSS</li>
+          <ul class="skills">
+          <li>C++</li>
+          <li>HTML</li>
+          <li>JS</li>
+          <li>CSS</li>
           </ul>
           <br><br>
-          <i><span style="font-size:30px; float:left;">Operating Systems:</span></i>
+          <i><span style="font-size:30px;">Operating Systems:</span></i>
           <br>
-          <ul style="font-size:20px; list-style-type:none;">
-          <li class="skill" >Windows</li>
-          <li class="skill" >Linux</li>
-          <li class="skill" >OSX</li>
-          <li class="skill" >CSS</li>
+          <ul class="skills">
+          <li>Windows</li>
+          <li>Linux</li>
+          <li>OSX</li>
+          <li>CSS</li>
           </ul>
           <br><br>
-          <i><span style="font-size:30px; float:left;">Devices:</span></i>
+          <i><span style="font-size:30px;">Devices:</span></i>
           <br>
           <ul style="font-size:20px; list-style-type:none; ">
-          <li class="skill" >iPhone</li>
-          <li class="skill" >Android</li>
-          <li class="skill" >Windows Phone</li>
-          <li class="skill" >CSS</li>
+          <li>iPhone</li>
+          <li>Android</li>
+          <li>Windows Phone</li>
+          <li>CSS</li>
           </ul>                    
         </div>          
         <div class="modal-footer">
@@ -171,10 +171,10 @@
         </div>
         <div class="modal-body">
           <ul style="font-size:20px; list-style-type:none; ">
-          <li class="skill" >DJ Jag</li>
-          <li class="skill" style="float:left;">Steve Jobs</li>
-          <li class="skill" >Bill Gates</li>
-          <li class="skill" >Cool Kid</li>
+          <li>DJ Jag</li>
+          <li>Steve Jobs</li>
+          <li>Bill Gates</li>
+          <li>Cool Kid</li>
           </ul>                   
         </div>          
         <div class="modal-footer">

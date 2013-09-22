@@ -2,11 +2,15 @@ html{
     background: #FFFFFF no-repeat center center fixed;
 }
 
-.skill{
-	text-align:left;
+.skills li {
+	display: inline-block;
 	margin-left: 20px;
-	float:left;
-	width:150px;
+	width: 100px;
+}
+.skills {
+	display: block;
+	margin: 0;
+	text-align: left;
 }
 
 .input{
