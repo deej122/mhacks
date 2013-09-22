@@ -55,7 +55,11 @@
 	foreach ($cursor[$_GET['id']]['ids'] as $userI) {
 		$userQ = array('_id' => new MongoId($userI));
 		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true, 'prog' => true, 'username' => true)));
-		echo '<a data-toggle="modal" onclick=\'window.location = "people.php?id=' . $_GET['id'] . '&name=' . $ucursor[0]['name'] . '"\'; href=#userModal id="modelink"><li class="eventItem">' .
+		echo '<a data-toggle="modal"';
+		if (!isset($_GET['name']) || $_GET['name'] != $ucursor[0]['name']) {
+			echo 'onclick=\'window.location = "people.php?id=' . $_GET['id'] . '&name=' . $ucursor[0]['name'] . '"\';'
+		}
+		echo 'href=#userModal id="modelink"><li class="eventItem">' .
 		$ucursor[0]['name'] .
 		'<br><i><span id="hacker">Skills: </span><span id="skillsList">' .
 		$ucursor[0]['prog'] .
