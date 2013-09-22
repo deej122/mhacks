@@ -40,7 +40,7 @@
 	$eventQ = array('_id' => new MongoId($_GET['id']));
 	$cursor = iterator_to_array($collection->find($eventQ));
 	echo '<a href="" id="head">' . $cursor[$_GET['id']]['title'] . '</a>';
-	echo '<a href="" id="headr">' . $cursor[$_GET['id']]['title'] . '</a>';
+	echo '<a href="events.php" id="headr">' . $cursor[$_GET['id']]['title'] . '</a>';
 ?>
 
   

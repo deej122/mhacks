@@ -22,7 +22,6 @@ html{
 	float: left;
 	color: rgba(255, 153, 18, 1);
 	text-decoration: none;
-	border: 1px solid black;
 }
 
 #headr{
@@ -33,8 +32,8 @@ html{
 	font-size: 30px;
 	float: right;
 	color: rgba(255, 153, 18, 1);
+	text-align:right;
 	text-decoration: none;
-	border: 1px solid black;
 }
 
 #listLabel{
