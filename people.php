@@ -52,13 +52,13 @@
   <?php
 	$collection = $db->users;
 	foreach ($cursor[$_GET['id']]['ids'] as $user) {
-		var_dump($user);
 		$userQ = array('_id' => new MongoId($user));
 		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true)));
 		echo '<a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">' .
 		$ucursor[0]['name'] .
-		'<br><i><span id="hacker">Skills: </span><span id="skillsList">C++, HTML, JS, CSS</span></i>
-		</li></a>';
+		'<br><i><span id="hacker">Skills: </span><span id="skillsList">' .
+		$ucursor[0]['prog'] .
+		'</span></i></li></a>';
 	}
   ?>
   </ul> 
