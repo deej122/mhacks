@@ -54,6 +54,7 @@
 	foreach ($cursor[$_GET['id']]['ids'] as $user) {
 		$userQ = array('_id' => new MongoId($user));
 		$ucursor = iterator_to_array($collection->find($userQ, array('_id' => 0, 'name' => true)));
+		var_dump($ucursor[0]);
 		echo '<a data-toggle="modal" href="#userModal" id="modelink"><li class="eventItem">' .
 		$ucursor[0]['name'] .
 		'<br><i><span id="hacker">Skills: </span><span id="skillsList">' .
