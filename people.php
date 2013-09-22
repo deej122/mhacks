@@ -39,7 +39,6 @@
 	$collection = $db->events;
 	$eventQ = array('_id' => new MongoId($_GET['id']));
 	$cursor = iterator_to_array($collection->find($eventQ));
-	var_dump($cursor);
 	echo '<a href="" id="head">' . $cursor[$_GET['id']]['title'] . '</a>';
 ?>
 
