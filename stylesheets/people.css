@@ -12,13 +12,13 @@ html{
 	padding: 5px;
 }
 .skills {
-	/*display: block;*/
+	display: block;
 	margin: 0;
 	vertical-align: middle;
 	text-align: left;
 	list-style: none;
 	font-size: 20px;
-	padding-left: 0;
+	/*padding-left: 0;*/
 }
 
 .input{
