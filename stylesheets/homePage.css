@@ -5,8 +5,11 @@ html{
 .input{
 	font-size: 20px;
 	border: 1px solid black;
+	padding: 4px;
 	height: 30px;
 	width: 300px;
+	font-family: inherit;
+	font-weight: 200;
 }
 
 #head{
@@ -38,7 +41,8 @@ html{
 .button{
 	border-radius: 3px;
     padding: 5px;
-    font-size: 15px;
+    font-size: 55px;
+	font-weight: 200;
     color: #FFFFFF;
     background-color: rgba(97, 179, 41, 1);
     border: none;

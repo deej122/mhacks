@@ -49,7 +49,7 @@
   
   if (!isset($_POST["user"]) || !isset($_POST["password"])) {
 	echo '<form class="loginForm" action="index.php" method="POST" id="login">
-			<p class="formLabel">Login to find teammates</p>  
+			<p class="formLabel">Login to Find Teammates</p>  
 			<input name="user" type="text" class="input" placeholder="Email/Cell Phone"/>
 			<br><br>
 			<input name="password" type="password" class="input" placeholder="Password"/>
